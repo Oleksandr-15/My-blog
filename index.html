@@ -2,28 +2,69 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Sticker Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
-    <link rel="shortuct icon" href="img/baby-yoda.svg">
-</head>
+    </head>
 
 <body>
 	<header>
-		<nav class="header-nav">
-			<div class="logo"><img  src="img/alex.png" width="117" alt="logo" ></div>
-            <label class="burger-icon" for="burger-checkbox">☰</label>
-            <input type="checkbox" id="burger-checkbox">
-			<div class="menu-items">
-				<a href="#about">Про мене</a>
-                <a href="Blog.html">Блог</a>
-                <a href="tips">Поради</a>
-                <a href="gallery.html">Галерея</a>
-                <a href="contacts.html">Контакти</a> 
-			</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="#"><img src="img/alex.png" width="117" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbar" >
+                        <!-- Вертикальное меню -->
+                        <ul class="navbar-nav text-center ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Про мене</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Блог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tips">Поради</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gallery">Галерея</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+		<div class="container-header">
+            <div class="row row-conformity">
+                <div class="col">
+                    <div class="line">
+                    <img src="img/line.png" alt="line" width="380">
+                </div class>
+                    <h1 class="h1 text-center ">Привіт! Мене звати Олександр, і я мандрівник</h1>
+                    <p class="lead text-center">Я ділюсь лайфхаками щодо подорожей </p>
+                    <div class="button text-center">
+                    <button>МОЯ ІСТОРІЯ</button>
+                    <button>ЗАПИТАЙ В МЕНЕ</button>
+                    </div>
+                </div>
+                    <div class="col-6">
+                    <img  src="img/me.jpg" alt="me" width="502">
+                </div>
 
-		</nav>
+                
+                </div>
+            </div>
+        
 		
 	</header>
 
@@ -252,5 +293,10 @@
 <p>Created by Oleksandr</p>
 </footer>
 -->
+<!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
 </body>
 </html>

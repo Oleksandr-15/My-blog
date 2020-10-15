@@ -1,114 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 :root {
     --main-color: black;
-    --accent-color: white;
+    --accent-color: green;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    max-width: 980px;
+    max-width: 1080px;
     margin:auto;
 }
 header {
     margin-top: 20px;
 }
-.header-nav .logo {
-    width: 117;
-    text-align: left;
+.navbar {
+    padding: 10px 0 30px 0
 }
 
-.header-nav .menu-items {
-    justify-content: flex-end;
-    flex: 1;
-    display: none;
+.line {
     text-align: center;
-    border: none;
+    padding: 50px 0 30px 0;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    fon
+    padding-bottom: 30px;
+}
+p {
+    padding: 20px 0 30px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+button {
+    padding: 10px 20px 10px 20px;
+    background-color: #739169;
     
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  .navbar-container .navbar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar-container .navbar-collapse {
+    align-items: flex-start;
+  }
+  .navbar-container .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .navbar-container .navbar-nav {
+    flex-direction: column !important;
+  }
+   .navbar-nav .text-right {
+    text-align: center!important;
 }
  
-.header-nav .menu-items a {
-    display: block;
-    text-decoration: none;
-    color: var(--main-color);
-    padding: 10px;
-    
 }
-
-.header-nav .menu-items a:hover {
-    border: 1px solid var(--main-color);
-}
-
-
-/* Burger menu */
-.burger-icon {
-    font-size: 2rem;
-}
-
-.burger-icon:hover {
-    cursor: pointer;
-}
-
-#burger-checkbox {
-    display: none;
-}
-
-.header-nav input:checked ~ .menu-items {
-    display: block;
-}
-
-@media (min-width: 769px) {
-
-    .burger-icon {
-        display: none;
-        align-items: center;
-    }
-
-    .header-nav {
-        display: flex;
-        align-items: center;
-    }
-
-    #burger-checkbox ~ .menu-items {
-        display: flex;
-        align-items: center;
-    }
- 
-        
-    
-}
-
-
-
-
-
-/* Controls */
-
-.button {
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    color: #FFFFFF;
-    text-align: center;
-    transition: all 0.7s;
-    background-color: transparent;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-
-.card-button {
-    border-color: black;
-    color: black;
-}
-
-.card-button:hover {
-    background-color: black;
-    color: white;
-}
-
