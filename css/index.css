@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400,700&display=swap');
 
 :root {
     --main-color: black;
@@ -19,19 +19,27 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-     
+
 }
 .header-banner .banner-left {
     display: block;
+   
     
 }
-.header-banner img {
+.header-banner .banner-left img {
     display: block;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
 
+}
+.header-banner .banner-right img{
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
 .header-banner h1 {
     font-family: 'Poppins', sans-serif;
@@ -79,7 +87,7 @@ body {
 }
 .about-me {
     background-image: url(../img/fontoo.jpg);
-    padding: 150px 0 150px 0;
+    padding: 150px 0 50px 0;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -126,7 +134,36 @@ body {
     padding-bottom: 30px;
     text-align: center;
 }
+.results-data {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 70px 0 70px;
+    text-align: center;
 
+}
+.results-data strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    color: #739169;
+    font-weight: 700;
+    
+}
+.results-data hr{
+    color: #739169;
+    width: 30px;
+    height: 2px;
+    background-color: #739169;
+}
+.results-data p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 30px;
+    
+}
 
 @media (min-width: 768px) {
   .navbar-container {
